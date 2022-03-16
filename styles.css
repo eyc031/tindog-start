@@ -1,0 +1,187 @@
+#title{
+  background-color: #ff4c68;
+  color:white;
+  /* Color of description of Tindog changed to white. Can also do this in header */
+}
+
+body{
+  font-family: "Montserrat";
+}
+
+h1, h2,h3,h4,h5,h6{
+  font-family:"Montserrat-Bold";
+}
+
+/* h1{
+  font-size: 3.5rem;
+  line-height: 1.5;
+} */
+
+/* h2{
+  font-size:3.5rem;
+  line-height:1.5;
+} */
+
+h3{
+  font-weight:bold;
+  font-size:1.5rem;
+}
+
+/* Headers */
+.big-heading{
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+p{
+  color:#8f8f8f;
+}
+
+.container-fluid{
+  padding:7% 15%;
+  /* padding to top and bottom 3% and left and right 15% */
+}
+
+/* Navigation Bar */
+.navbar{
+  padding:0 0 4.5rem;
+  /* adding padding- 0 to top, 0 to left and right, 4.5rem to bottom */
+}
+
+.navbar-brand{
+  font-family:"Ubuntu";
+  font-size:2.5rem;
+  font-weight:bold;
+}
+
+.nav-item{
+  padding:0 18px;
+}
+
+.nav-link{
+  font-size:1.2rem;
+  font-family:"Montserrat";
+}
+
+/* Download Buttons */
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.title-image{
+  transform: rotate(25deg);
+  width:20%;
+  position:absolute;
+  right:25%;
+  /* pushing image from the right to align. padding */
+}
+
+/* Features Section */
+#features{
+  padding:7% 15%;
+  background-color: white;
+  position: relative;
+  /* relative will allow our features to have a position while absolute would place them on top of each other */
+}
+
+.features-image{
+  color:#ef8172;
+  margin-bottom:1rem
+}
+
+.features-image:hover{
+  color:#ff4c68;
+}
+.feature-box{
+  text-align: center;
+  padding:5%;
+}
+/* Testimonals */
+#testimonials{
+  text-align:center;
+  background-color: #ef8172;
+  color:#fff;
+}
+
+.carousel-item{
+  padding:7% 15%;
+}
+
+.testimonial-image{
+  width:20%;
+  /* changing image size */
+  border-radius:100%;
+  /* Changing picture from square to circle */
+  margin:20%
+}
+
+#press{
+  text-align:center;
+  background-color: #ef8172;
+  padding-bottom:3%;
+}
+
+.press-logo{
+  margin:20px 20px 50px;
+  /* 20px from top, 20px from left and right, 50px from bottom */
+  width:15%;
+}
+
+/*Pricing Card */
+#pricing{
+  padding:100px;
+  font-family: "Montserrat-Bold";
+  text-align: center;
+}
+
+.price-text{
+  font-size:3.5rem;
+  line-height:1.5;
+}
+
+.pricing-column{
+  padding:3% 2% 0;
+}
+
+/* CTA */
+#cta{
+  text-align: center;
+  background-color: #ff4c68;
+  color:#fff;
+  padding:7% 15%;
+  margin: 10% 0;
+}
+
+.cta-header{
+  font-family:"Montserrat-Black";
+  font-size:3rem;
+  line-height:1.5;
+  text-align: center;
+  padding:0 25%;
+}
+
+/* Footer */
+#footer{
+  text-align: center;
+  /* margin:5% 0 0; My goal with this to create separation between cta and footer. But padding makes sense.*/
+  padding:3% 15%;
+}
+
+.footer-image{
+  margin:10px 20px;
+}
+
+/* Media Query */
+/* meant to be used for responsive. Can go mobile first or you can design for desktop. Suggestions go for both ways to see which way you prefer */
+@media (max-width:992px){
+  .title-image{
+    position:static;
+    /* so when width of site is under 992px, position goes from absolute to static */
+    transform:rotate(0);
+    width:60%;
+  }
+  #title{
+    text-align: center;
+  }
+}
